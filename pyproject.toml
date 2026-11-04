@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "polarsteps-to-geo"
+version = "0.1.0"
+description = "Dependency-free conversion of Polarsteps locations to geographic formats"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {file = "LICENSE"}
+dependencies = []
+
+[project.scripts]
+polarsteps-to-geo = "polarsteps_to_geo.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["polarsteps_to_geo*"]
